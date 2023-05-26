@@ -1,0 +1,28 @@
+Algoritmo "Aprovação"
+
+Var
+   P1, P2, P3: Real
+   media: Real
+   nome: caractere
+Inicio
+   escreva("Digite primeira nota : ")
+   leia(P1)
+   
+   escreva("Digite segunda nota  : ")
+   leia(P2)
+   
+   escreva("Digite terceira nota : ")
+   leia(P3)
+
+   media<-(P1 + P2 + P3)/3
+
+   escreval
+   escreval("A média do aluno é: ", Media)
+
+   se (Media>=7) entao
+      escreva("Aluno aprovado por média")
+   senao
+      escreva("Aluno reprovado.")
+   fimse
+
+Fimalgoritmo
