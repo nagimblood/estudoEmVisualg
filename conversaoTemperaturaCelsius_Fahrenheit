@@ -1,0 +1,26 @@
+Algoritmo "Conversor de temperatura"
+Var
+   celsius, fahrenheit: real
+   conversaoParaFahrenheit, conversaoParaCelsius: real
+
+
+
+Inicio
+      escreval("Qual a atual temperatura em Celsius?")
+      leia(celsius)
+      
+      conversaoParaFahrenheit <- (((9/5) * celsius) + 32)
+      
+      escreval
+      escreval("A temperatura ", celsius, " em graus Celsius é igual a temperatura", conversaoParaFahrenheit, " em graus Fahrenheit.")
+
+      escreval
+      escreval("Qual a atual temperatura em Fahrenheit?")
+      leia(fahrenheit)
+
+      conversaoParaCelsius <- ((fahrenheit - 32)*(5/9))
+
+      escreval
+      escreval("A temperatura ", fahrenheit, " em graus Fahrenheit é igual a temperatura", conversaoParaCelsius, " em graus Celsius.")
+
+Fimalgoritmo
