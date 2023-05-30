@@ -1,0 +1,60 @@
+algoritmo "IMC"
+// Autor: Prof. Dr. Sofiane Labidi
+// Data: 29/05/2023
+
+var
+   peso,altura,imc : real
+   classe          : caractere
+
+inicio
+   limpatela
+   
+   // Input
+   escreva("Peso  : ")
+   leia(peso)
+   
+   escreva("Altura: ")
+   leia(altura)
+   
+   // Processing
+   imc <- peso / (altura*altura)
+   
+   se imc<16 entao
+      classe<="Magreza Grau III"
+   senao
+      se imc<17 entao
+         classe<-"Magreza Grau II"
+      senao
+         se imc<18.5 entao
+            classe<-"Magreza Grau I"
+         senao
+            se imc<25 entao
+               classe<-"Eutrofia"
+            senao
+               se imc<30 entao
+                  classe-<"SobrePreso"
+               senao
+                  se imc<30 entao
+                     classe<-"Obesidade Grau I"
+                  senao
+                     se imc<35 entao
+                        classe<-"Obesidade Grau II"
+                     senao
+                        se imc<40 enato
+                           classe<-"Obsidade Grau II"
+                        senao
+                           classe<-"Obsidade Grau II"
+                        fimse
+                     fimse
+                  fimse
+               fimse
+            fimse
+         fimse
+      fimse
+   fimse
+   
+   // Output
+   escreval
+   escreval
+   escreval("Você está com ",classe)
+fimalgoritmo
