@@ -1,4 +1,7 @@
 Algoritmo "Conversor de temperatura"
+// Autor: João Pedro Silva
+// Data: 29/05/2023
+
 Var
    celsius, fahrenheit: real
    conversaoParaFahrenheit, conversaoParaCelsius: real
