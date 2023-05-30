@@ -1,4 +1,7 @@
 Algoritmo "Cálculo de IMC"
+// Autor: João Pedro Silva
+// Data: 29/05/2023
+
 Var
 
    IMC, m, a: real
