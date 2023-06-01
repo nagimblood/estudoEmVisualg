@@ -1,0 +1,42 @@
+algoritmo "Boa!"
+// Autor: Prof. Sofiane Labidi
+// Data: 31/05/2023
+
+var
+   nome   : caractere
+   hora   : inteiro
+   minuto : inteiro
+   
+   msg    : caractere
+
+inicio    // Bloco Principal
+   // Input
+   escreva("Nome   : ")
+   leia(nome)
+   
+   escreval
+   escreva("Hora   : ")
+   leia(hora)
+   
+   escreva("Minuto : ")
+   leia(minuto)
+   
+   // Processing
+   se hora<=5 entao
+      msg <- "Boa madrugada"
+   senao
+      se hora<12 entao
+         msg <- "Bom dia"
+      senao
+         se hora<17 entao
+            msg <- "Boa tarde"
+         senao
+            msg <- "Boa noite"
+         fimse
+      fimse
+   fimse
+   
+   // Output
+   escreval
+   escreval(msg," ",nome,"!")
+fimalgoritmo
