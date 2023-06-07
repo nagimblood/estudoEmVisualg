@@ -12,7 +12,11 @@
    leia(b)
    
    se a=0 entao
-        escreval("A função não tem raiz")
+      se b= 0 entao
+         escreval("IR")
+      senao
+         escreval("A função não tem raiz")
+      fimse
    senao
         raiz <- -b/a
         escreval("A raiz da função é ", raiz)
