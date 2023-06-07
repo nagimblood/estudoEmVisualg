@@ -1,7 +1,7 @@
  algoritmo "Função do 1º grau"
  // [Fundamentos de Computadação]
  // Autores: Prof. Sofiane Labidi, João Pedro Silva
- // Data: 7 de junho de 2023
+ // Data: 07/06/2023
  var
    a, b, raiz: real
  inicio
