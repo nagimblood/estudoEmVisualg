@@ -4,7 +4,10 @@ algoritmo "Média de aprovação"
 // Data: 07/06/2023
 var
    n1, n2, n3, media: real
+   
 inicio
+
+// Imput
 
    escreval("Primeira nota do aluno: ")
    leia(n1)
@@ -14,9 +17,13 @@ inicio
    
    escreval("Terceira nota do aluno: ")
    leia(n3)
-   
+
+// Processing
+
    media <- (n1 + n2 + n3)/3
-   
+
+//Output
+
    se media >=7 entao
       escreval("Aluno aprovado por média (", media:2:2, "/10).")
    senao
