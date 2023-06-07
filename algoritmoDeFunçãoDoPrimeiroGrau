@@ -1,0 +1,21 @@
+ algoritmo "Função do 1º grau"
+ // [Fundamentos de Computadação]
+ // Autores: Prof. Sofiane Labidi, João Pedro Silva
+ // Data: 7 de junho de 2023
+ var
+   a, b, raiz: real
+ inicio
+   escreval("Insira o valor de a: ")
+   leia(a)
+
+   escreval("Insira o valor de b: ")
+   leia(b)
+   
+   se a=0 entao
+        escreval("A função não tem raiz")
+   senao
+        raiz <- -b/a
+        escreval("A raiz da função é ", raiz)
+   fimse
+
+ fimalgoritmo
