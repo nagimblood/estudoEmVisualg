@@ -1,0 +1,41 @@
+Algoritmo "Criança Esperança"
+// Disciplina  :  [Fundamentos de Computação]
+// Autor(a)    : ..., João Pedro Silva
+// Data        : 07/06/2023
+Var
+
+   doacao, valor: real
+
+Inicio
+
+   escreval("-----------------")
+   escreval("CRIANÇA ESPERANÇA")
+   escreval("-----------------")
+   escreval("Muito orbigado por ajudar!")
+   escreval("[1] para doar R$ 10")
+   escreval("[2] para doar R$20")
+   escreval("[3] para doar R$ 30")
+   escreval("[4] para doar outros valores")
+   escreval("[5] para cancelar")
+   leia(doacao)
+
+   Escolha doacao
+   caso 1
+      valor <- 10
+   caso 2
+      valor <- 20
+   caso 3
+      valor <- 30
+   caso 4
+      escreval("Qual o valor que deseja doar? R$")
+      leia(valor)
+   caso 5
+      valor <- 0
+   fimescolha
+
+   escreval("----------------------------")
+   escreval("Sua doação foi de R$ ", valor)
+   escreval("Muito obrigado!")
+   escreval("----------------------------")
+
+Fimalgoritmo
