@@ -1,0 +1,27 @@
+algoritmo "Números múltiplos de Três"
+// Disciplina: [Fundamentos de Computação]
+// Professor: Sofiane Labidi
+// Aluno: João Pedro Silva
+// Autores: Sofiane Labidi, João Pedro Silva
+// Data: 14/06/2023
+
+var
+   i, n: inteiro
+
+inicio
+   escreval("Informe o valor de n: ")
+   leia(n)
+
+   //Declaração de cálculo
+   para i de 0 ate n faca
+      se i%3=0 entao
+         escreval(i)
+      fimse
+   fimpara
+
+   escreval
+   // Forma mais ágil (menos cálculos)
+   para i de 0 ate n passo 3 faca
+      escreval(i)
+   fimpara
+fimalgoritmo
