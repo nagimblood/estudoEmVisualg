@@ -1,0 +1,20 @@
+Algoritmo "linha"
+// Disciplina  :  [Fundamentos de Computação]
+// Professor   : Sofiane Labidi
+// Descrição   : Algoritmo de estudo da estrutura de repetição PARA.
+// Autor(a)    : Sofiane Labidi
+// Data atual  : 14/06/2023
+Var
+   i, j: inteiro
+   linha, coluna: inteiro
+Inicio
+   linha  <- 10
+   coluna <- 30
+   para i de 1 ate linha faca
+      para j de 1 ate coluna faca
+         escreva("*")
+      fimpara
+      escreval
+   fimpara
+
+Fimalgoritmo
