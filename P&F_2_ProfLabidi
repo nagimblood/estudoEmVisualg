@@ -1,0 +1,39 @@
+Algoritmo "P&F 2"
+// Disciplina  : [Fundamentos de Computação]
+// Professor   : Sofiane Labidi
+// Descrição   : Algoritmo de estudo de procedimentos e funções.
+// Autor(a)    : Sofiane Labidi
+// Data atual  : 21/06/2023
+Var
+   a, b: inteiro
+   nota1, nota2, nota3: real
+
+procedimento impares
+var i: inteiro
+   se a%2=0 entao
+      a <- a + 1
+   fimse
+
+   para i de a ate b passo 2 faca
+      escreva(i:1, " ")
+   fimpara
+fimprocedimento
+
+funcao media(n1, n2, n3: real):real
+inicio
+   retorne (n1+n2+n3)/3
+fimfuncao
+
+Inicio
+   escreva("Insira a 1ª nota: ")
+   leia(nota1)
+
+   escreva("Insira a 2ª nota: ")
+   leia(nota2)
+
+   escreva("Insira a 2ª nota: ")
+   leia(nota3)
+
+   escreval
+   escreva("A média é: ", media(nota1, nota2, nota3):5:2)
+Fimalgoritmo
