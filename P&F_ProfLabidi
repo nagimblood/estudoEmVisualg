@@ -18,7 +18,12 @@ inicio
 fimprocedimento
 
 Inicio
-   para i de 1 ate 5 faca
-      linha
-   fimpara
+   escreva("Altura do retângulo: ")
+   leia(a)
+   
+   escreva("Largura do retângulo: ")
+   leia(b)
+   
+   escreval
+   ret("*", a, b)
 Fimalgoritmo
