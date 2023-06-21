@@ -1,0 +1,24 @@
+Algoritmo "P&F"
+// Disciplina  : [Fundamentos de Computação]
+// Professor   : Sofiane Labidi
+// Descrição   : Aula de Procedimentos e Funções.
+// Autor(a)    : Sofiane Labidi
+// Data atual  : 21/06/2023
+
+var
+   i: inteiro
+   
+procedimento linha
+Var i: inteiro
+inicio
+   para i de 1 ate 20 faca
+      escreva("*")
+   fimpara
+   escreval
+fimprocedimento
+
+Inicio
+   para i de 1 ate 5 faca
+      linha
+   fimpara
+Fimalgoritmo
