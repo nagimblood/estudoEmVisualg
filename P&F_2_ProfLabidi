@@ -5,38 +5,9 @@ Algoritmo "P&F 2"
 // Autor(a)    : Sofiane Labidi
 // Data atual  : 21/06/2023
 
-funcao primo(n:inteiro):logico
-var i, qtd: inteiro
-inicio
-   qtd <- 0
-   para i de 2 ate n-1 faca
-      se n%i=0 entao
-         qtd <- qtd+1
-      fimse
-   fimpara
-
-   se qtd = 0 entao
-      retorne verdadeiro
-   senao
-      retorne falso
-   fimse
-fimfuncao
-
-var
-   n: inteiro
-inicio
-   escreva("Digite um número: ")
-   leia(n)
-   se primo(n) = verdadeiro entao
-      escreva(n, " é um número primo.")
-   senao
-      escreva(n, " NÃO é um número primo.")
-   fimse
-
-{
 Var
-   a, b: inteiro
-   nota1, nota2, nota3: real
+  a, b, n: inteiro
+  nota1, nota2, nota3: real
 
 procedimento impares
 var i: inteiro
@@ -54,17 +25,44 @@ inicio
    retorne (n1+n2+n3)/3
 fimfuncao
 
+funcao primo(n:inteiro):logico
+var i, qtd: inteiro
+inicio
+   qtd <- 0
+   para i de 2 ate n-1 faca
+      se n%i=0 entao
+         qtd <- qtd+1
+      fimse
+   fimpara
+
+   se qtd = 0 entao
+      retorne verdadeiro
+   senao
+      retorne falso
+   fimse
+fimfuncao
+
 Inicio
-   escreva("Insira a 1ª nota: ")
-   leia(nota1)
+escreva("Digite um número: ")
+   leia(n)
+   se primo(n) = verdadeiro entao
+      escreva(n, " é um número primo.")
+   senao
+      escreva(n, " NÃO é um número primo.")
+   fimse
 
-   escreva("Insira a 2ª nota: ")
-   leia(nota2)
 
-   escreva("Insira a 2ª nota: ")
-   leia(nota3)
 
-   escreval
-   escreva("A média é: ", media(nota1, nota2, nota3):5:2)
-   }
+//   escreva("Insira a 1ª nota: ")
+//   leia(nota1)
+
+//   escreva("Insira a 2ª nota: ")
+//   leia(nota2)
+
+//   escreva("Insira a 2ª nota: ")
+//   leia(nota3)
+
+//   escreval
+//   escreva("A média é: ", media(nota1, nota2, nota3):5:2)
+
 Fimalgoritmo
