@@ -1,0 +1,53 @@
+Algoritmo "Prova"
+// Disciplina  :  [Fundamentos de Computação]
+// Professor   : Sofiane Labidi
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Sofiane Labidi
+// Data atual  : 21/06/2023
+Var
+   a,b, i, start : inteiro
+   resp          : caractere
+Inicio
+   repita
+      limpatela
+      // Entrada
+      escreva("Valor de a: ")
+      leia(a)
+
+      escreva("Valor de b: ")
+      leia(b)
+
+      // Processamento
+
+      // Caso 1
+      escreval("Relação dos números ímpares no intervalo [", a:2 , ",", b:2, "]: ")
+      para i de a ate b faca
+         se i%2 <> 0 entao
+            escreva(i, " ")
+         fimse
+      fimpara
+
+      // Caso 2
+      se a%2 = 0 entao
+         start <- a + 1
+      senao
+         start <- a
+      fimse
+
+      para i de start ate b passo 2 faca
+         escreva(i)
+      fimpara
+      
+      escreval
+      escreval
+      escreva("Deseja continuar? (s/n)")
+      leia(resp)
+   ate (resp = "n")
+   
+   limpatela
+   escreval
+   escreva("Até mais!")
+
+
+   // Saída
+Fimalgoritmo
