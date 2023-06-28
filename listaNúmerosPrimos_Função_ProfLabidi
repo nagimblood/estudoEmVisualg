@@ -1,0 +1,44 @@
+algoritmo "Lista de números primos - função"
+// Autor: Sofiane Labidi
+// Professor: Sofiane Labidi
+// Data: 28/06/2023
+
+funcao primo(n:inteiro): logico
+var i, qtd: inteiro
+inicio
+   qtd <- 0
+   para i de 2 ate n-1 faca
+      se n%i=0 entao
+         qtd <- qtd + 1
+      fimse
+   fimpara
+   
+   se qtd=0 entao
+      retorne verdadeiro
+   senao
+      retorne falso
+   fimse
+fimfuncao
+
+procedimento primos(a,b: inteiro)
+var i: inteiro
+inicio
+   para i de a ate b faca
+      se primo(i) entao
+         escreva(i)
+      fimse
+   fimpara
+fimprocedimento
+
+var
+   a, b: inteiro
+
+inicio
+   escreva("Insira o valor de a: ")
+   leia(a)
+   
+   escreva("Insira o valor de b: ")
+   leia(b)
+   
+   primos(a,b)
+fimalgoritmo
