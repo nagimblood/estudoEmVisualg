@@ -1,0 +1,43 @@
+algoritmo "Função Fibonacci"
+// Autor: Sofiane Labidi
+// Professor: Sofiane Labidi
+// Data: 28/06/2023
+
+// Forma interativa.
+funcao fibonacci(n:inteiro): inteiro
+var i, fib, a, b : inteiro
+inicio
+   se (n=0) ou (n=1) entao
+      retorne 1
+   senao
+      fib <- 1
+      a <- 1
+      b <- 1
+      para i de 2 ate n faca
+         fib <- a + b
+         b <- a
+         a <- fib
+      fimpara
+   fimse
+fimfuncao
+
+// Forma recursiva.
+funcao fibonacciR(n: inteiro): inteiro
+inicio
+   se (n=0) ou (n=1) entao
+      retorne 1
+   senao
+      retorne fibonacciR(n-1) + fibonacciR(n-2)
+   fimse
+
+fimfuncao
+
+Var n: inteiro
+inicio
+   escreva("Digite o valor de n: ")
+   leia(n)
+
+   escreval("Fib(",n:1,") = ",fibonacci(n))
+   escreval("Fib(",n:1,") = ",fibonacciR(n))
+
+fimalgoritmo
