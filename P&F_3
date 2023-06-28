@@ -1,0 +1,38 @@
+Algoritmo "P&F 3"
+// Disciplina  : [Fundamentos de Computação]
+// Professor   : Sofiane Labidi
+// Descrição   :
+// Autor(a)    : Sofiane Labidi
+// Data atual  : 28/06/2023
+funcao fatorialInterativa(n: inteiro): inteiro
+var i, fat: inteiro
+inicio
+   fat <- 1
+   para i de 1 ate n faca
+      fat <- fat*i
+   fimpara
+
+   retorne fat
+fimfuncao
+
+funcao fatorialRecursiva(n: inteiro): inteiro
+inicio
+   se n=0 entao
+      retorne 1
+   senao
+      retorne n * fatorialRecursiva(n-1)
+   fimse
+
+fimfuncao
+
+Var a: inteiro
+Inicio
+   escreval("Boa tarde!")
+
+   escreva("Digite um número: ")
+   leia(a)
+   escreval
+   escreval("O fatorial de ",a:1," é ",fatorialInterativa(a):1)
+   // escreval(fatorialRecursiva(a))
+
+Fimalgoritmo
