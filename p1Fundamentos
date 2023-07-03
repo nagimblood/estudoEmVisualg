@@ -1,0 +1,108 @@
+Algoritmo "Avaliação 1"
+// Disciplina  : Fundamentos de Computação
+// Professor   : Sofiane Labidi
+// Autor(a)    : João Pedro Silva
+// Data atual  : 03/07/2023
+
+//funcao exponencial(a, b: inteiro): inteiro
+//var cont, expoen, ref: inteiro
+//inicio
+//   ref <- a
+//   para cont de 1 ate (b-1) faca
+//      expoen <- 1
+//      expoen <- a * ref
+//      a <- expoen
+
+//      retorne expoen
+//   fimpara
+
+//fimfuncao
+
+
+//funcao predicado(ano: inteiro): logico
+//var bissexto: logico
+//inicio
+//   se (ano%4 = 0) e (ano%100 <> 0) entao
+//      bissexto <- verdadeiro
+//      escreva(ano:1, " é um ano bissexto.")
+//   senao
+//      bissexto <- falso
+//      escreva(ano:1, " não é um ano bissexto. ")
+//   fimse
+
+//   retorne bissexto
+//fimfuncao
+
+//funcao distancia(a,b: real): real
+//var dist: real
+//inicio
+//   dist <- b - a
+//   se dist >= 0 entao
+//      retorne dist
+//   senao
+//      retorne  dist * (-1)
+//   fimse
+
+//fimfuncao
+
+//funcao somaDiv(n:inteiro): inteiro
+//var i, somaDivisores: inteiro
+//inicio
+//   somaDivisores <- 0
+//   para i de 1 ate n faca
+//      se n%i=0 entao
+//         somaDivisores <- somaDivirores + i
+//         retorne somaDivisores
+//      fimse
+//   fimpara
+
+//fimfuncao
+
+funcao quadrado(intp: inteiro): inteiro
+var i, soma: inteiro
+inicio
+   soma <- 0
+   para i de 0 ate intp faca
+      soma <- soma + (i * i)
+   fimpara
+   retorne soma
+
+fimfuncao
+
+var
+   a,b,ano,n,lim: inteiro
+   c,d    : real
+
+inicio
+//   escreva("Digite o valor de a: ")
+//   leia(a)
+
+//   escreva("Digite o valor de b: ")
+//   leia(b)
+
+//   escreva("O valor da exponencial é ", exponencial(a,b):1)
+
+//   escreva("Qual o ano? ")
+//   leia(ano)
+
+//   escreva("A afirmação é",predicado(ano))
+
+//   escreva("Insira o ponto de c: ")
+//   leia(c)
+
+//   escreva("Insira o ponto de d: ")
+//   leia(d)
+
+//   escreva("A distância entre ",c:1," e ",d:1, " é de ",distancia(c,d))
+
+//   escreva("Digite o valor de n: ")
+//   leia(n)
+
+//   escreva("A soma dos divisores de ",n:1, " é ",somaDiv(n):1)
+
+   escreva("Insira o limitante: ")
+   leia(lim)
+   
+   escreva("A soma dos quadrados dos inteiros positivos menores ou iguais a ",lim:1, " é ", quadrado(lim))
+
+fimalgoritmo
