@@ -1,0 +1,63 @@
+algoritmo "Exercício Função"
+   // Autor: João Pedro Silva
+   // Data: 09/07/2023
+
+//funcao fgts(salario: real): real
+//var recmen: real
+//inicio
+//   recmen <- 0
+//   recmen <- salario - (salario * 0.8)
+//   retorne recmen
+//fimfuncao
+
+//funcao budaHis(sidarta: caractere): caractere
+//var nomeBuda: caractere
+//inicio
+//   nomeBuda <- "Sidarta Gautama"
+//   se (sidarta = nomeBuda) entao
+//      retorne ("correta!")
+//   senao
+//      retorne ("errada! O Buda Histórico é Sidarta Gautama, Príncipe dos Shakyas")
+//   fimse
+//fimfuncao
+
+funcao comunismo(ordem: caractere): caractere
+var marx: logico
+inicio
+   se (ordem = "Manifesto Comunista") entao
+      marx <- verdadeiro
+   senao
+      marx <- falso
+   fimse
+   
+   se marx = verdadeiro entao
+      retorne ("Aqui é comunismo, caralho")
+   senao
+      retorne ("Burguês filho da puta")
+   fimse
+   
+fimfuncao
+
+var
+   salario                : real
+   buda, manifesto        : caractere
+inicio
+//   escreva("Qual o seu salário? ")
+//   leia(salario)
+   
+//   escreva("Seu recolhimento mensal é de: R$", fgts(salario))
+//   escreva("Seu recolhimento anual é de: R$", (fgts(salario)*12))
+
+//   escreval("Qual o nome de Buda? ")
+//   leia(buda)
+   
+//   escreval
+//   escreva("Sua resposta está... ", budaHis(buda))
+
+   escreva("O que precisa para ter revolução? ")
+   leia(manifesto)
+   
+   escreval
+   escreva(comunismo(manifesto))
+
+fimalgoritmo
